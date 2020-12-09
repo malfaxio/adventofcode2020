@@ -41,7 +41,6 @@ do
   
   getCol ${d:7:3}
   col=$?
-  echo R: $row C: $col
   if [ $(( row*8+col )) -gt $sid ]; then
     sid=$(( row*8+col ))
   fi
